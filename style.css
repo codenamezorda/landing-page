@@ -1,0 +1,36 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+.header, footer {
+    background: #1f2937;
+    color: #f9faf8;
+}
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb !important;
+}
+.call-action {
+    background: #3882f6;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+.quote {
+    background: #e5e7eb;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
