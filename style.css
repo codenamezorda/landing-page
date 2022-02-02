@@ -20,17 +20,101 @@ h2 {
     font-weight: 900;
     color: #1f2937;
 }
-.quote {
-    background: #e5e7eb;
-    font-size: 36px;
-    font-weight: lighter;
-    font-style: italic;
+
+body {       /* starting here with the flexbox */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
 }
 .navbar {
     display: flex;
     justify-content: space-between;
 }
 .header-logo {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
+    margin-top: 15px; 
+}
+.header {
+    padding: 0 100px;
+    padding-bottom: 50px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.rowed-image {
+    background: rgb(97, 97, 97);
+    min-width: 350px;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-weight: bolder;
+    margin-bottom: -15px;
+}
+.main-subtext {
+    margin-bottom: 8px;
+}
+button {
+    padding: 5px 16px;
+    border-radius: 5px;
+}
+button.first {
+    background: #3882f6;
+    border-radius: 5px;
+    border: #3882f6;
+    color: #f9faf8;
+    font-weight: 400;
+}                       /* header section ends here */
+
+.information {           /* information section starts here */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+h2 {
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.box-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 200px;
+    padding-bottom: 50px;;
+}
+.together {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    min-height: 115px;
+    min-width: 115px;
+    border: 2px solid #3882f6;
+    border-radius: 8px;
+}
+.box-subtext {
+    text-align: center;
+    margin-top: 2px;
+    font-size: 15px;
+}                     /*the information section ends here */
+
+.quote {              /* the quote section starts here */
+    background: #e5e7eb;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    padding: 30px; /* should this section be a flexbox in order to center the text? */
 }
