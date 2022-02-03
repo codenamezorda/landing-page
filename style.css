@@ -90,7 +90,8 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 0px 200px;
-    padding-bottom: 50px;;
+    padding-bottom: 50px;
+    max-width: 800px;
 }
 .together {
     display: flex;
@@ -112,9 +113,63 @@ h2 {
 
 .quote {              /* the quote section starts here */
     background: #e5e7eb;
-    font-size: 36px;
     font-weight: lighter;
     font-style: italic;
-    text-align: center;
-    padding: 30px; /* should this section be a flexbox in order to center the text? */
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+p.thor {
+    margin: 0px 150px;
+    font-size: 25px;
+}
+p.god {
+    font-weight: bold;
+    text-align: right; 
+    font-size: 20px;
+    font-style: normal;
+}                       /* the quote section ends here */
+
+.call-action {          /* the call to action section starts here */
+    display: flex;
+    margin: 100px;
+    border: 1px solid #3882f6;
+    border-radius: 3px;
+    justify-content: center;
+    align-content: center;
+    color: #f9faf8;
+    padding: 15px 90px;
+    align-self: center;
+}
+.action-wrap {
+    display: flex;
+
+}
+.action-column {
+    display: flex;
+    flex-direction: column;
+}
+button.second {
+    color: #f9faf8;
+    background: #3882f6;
+    border: 1px solid #f9faf8;
+    align-self: center; /* doing this prevents the button from stretching */
+}
+.action-text {
+    margin-right: 60px;
+    font-size: 15px; /* this shouldn't be here and the justify-content in the bigger div should be space-between but it doesn't work and I don't feel like figuring it out */
+}
+h3.action-text {
+    margin-bottom: -15px;
+    font-size: 17px;
+}                       /* the call to action section ends here */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    font-size: 13px;
+    font-weight: bold;
 }
